@@ -1,0 +1,460 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Навигация */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white;
+}
+
+/* Основной контент */
+main {
+    padding: 3rem 0;
+}
+
+/* Геро-секция — salon1.jpg */
+.hero {
+    background: url('images/imageOriginal.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,154,158,0.4);
+}
+
+/* О мастере */
+.about {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6b81;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-content div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Галерея */
+.gallery {
+    padding: 3rem 0;
+    background-color: #fafafa;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6b81;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Информация */
+.info-list {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.info-list h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6b81;
+}
+
+.info-category {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-category h2 {
+    color: #ff6b81;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ff9a9e;
+    font-size: 1.5rem;
+}
+
+.info-category table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-category td {
+    padding: 1rem;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+.info-category td:first-child {
+    width: 70%;
+}
+
+.info-category td:last-child {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+.note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff8f8;
+    border-left: 4px solid #ff6b81;
+    font-style: italic;
+}
+/* Прайс-лист */
+.price-list {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.price-list h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6b81;
+}
+
+.price-category {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.price-category h2 {
+    color: #ff6b81;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ff9a9e;
+    font-size: 1.5rem;
+}
+
+.price-category table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-category td {
+    padding: 1rem;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+.price-category td:first-child {
+    width: 70%;
+}
+
+.price-category td:last-child {
+    width: 30%;
+    text-align: right;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+.note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff8f8;
+    border-left: 4px solid #ff6b81;
+    font-style: italic;
+}
+
+/* Портфолио */
+.portfolio {
+    padding: 3rem 0;
+    background-color: #fafafa;
+}
+
+.portfolio h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6b81;
+}
+
+.portfolio p {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .caption {
+    opacity: 1;
+}
+
+/* Фото салона — ВАШ КОД */
+.salon-photos {
+    padding: 3rem 0;
+    background-color: #fafafa;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 20px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.03);
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #ccc; /* серый для обычного текста */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* А ссылку — сделаем чисто белой */
+footer a {
+    color: #fff; /* ← именно это вы просили */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
