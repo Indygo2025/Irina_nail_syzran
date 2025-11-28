@@ -386,26 +386,27 @@ main {
 /* Прайс-лист */
 .price-list {
     padding: 3rem 0;
-    background-color: white;
+    background-color: #ff9a9e
 }
 
 .price-list h1 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #ff6b81;
+    color: #ffffff;
 }
 
 .price-category {
     margin-bottom: 3rem;
     padding: 2rem;
-    background: url("../images/фон\ Прайс2.jpg");
+    background: url("../images/фон\ Прайс4.jpg");
     background-size: cover;
+   
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .price-category h2 {
-    color: #ff6b81;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #ff9a9e;
@@ -431,7 +432,7 @@ main {
     width: 30%;
     text-align: right;
     font-weight: bold;
-    color: #ff6b81;
+    color: #ffffff;
 }
 
 .note {
