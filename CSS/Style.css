@@ -251,7 +251,7 @@ main {
     background: #27ae60;
 }
 
-.promo-header {
+.promo-header-1 {
     position: relative;
     height: 180px;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
@@ -261,11 +261,46 @@ main {
     color: white;
 }
 
-.promo-header h3 {
+.promo-header-1 {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: url("images/Знакомство3.jpg");
+    background-size: cover no-repeat center center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.promo-header-1 h3 {
     font-size: 1.5rem;
     margin: 0;
     font-weight: 700;
 }
+
+.promo-header-2 {
+    position: relative;
+    height: 180px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+.promo-header-2 {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: url("images/приведиподругу2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.promo-header-2 h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
 
 .promo-body {
     padding: 20px;
